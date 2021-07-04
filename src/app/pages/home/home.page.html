@@ -1,20 +1,46 @@
-<ion-header>
+<ion-header class="ion-no-border">
   <ion-toolbar>
+    <ion-buttons slot="start">
+      <ion-menu-button menu="first" color="primary"></ion-menu-button>
+    </ion-buttons>
+
+    <!-- <ion-button (click)="showMenu()" fill="clear">
+      <ion-icon slot="icon-only" name="menu-outline"></ion-icon>
+    </ion-button> -->
+
     <ion-title>Components</ion-title>
   </ion-toolbar>
 </ion-header>
 
-<ion-content>
-  <ion-list>
-    <ion-item *ngFor="let c of components" [routerLink]="c.redirecTo" detail>
-      <ion-icon [name]="c.icon" slot="start" color="primary"></ion-icon>
-      <ion-label>{{ c.name }}</ion-label>
+<ion-content class="ion-padding">
+  <!-- <ion-list>
+    <ion-item
+      *ngFor="let menuItem of menuOptions | async"
+      [routerLink]="menuItem.redirecTo"
+      detail
+    >
+      <ion-icon [name]="menuItem.icon" slot="start" color="primary"></ion-icon>
+      <ion-label>{{ menuItem.name }}</ion-label>
     </ion-item>
+  </ion-list> -->
+  <h3>Main Page</h3>
+  <hr />
+  <ion-list>
+    <ion-item>
+      <ion-label>Platform:</ion-label>
+      <ion-text color="primary"> Udemy </ion-text>
+    </ion-item>
+
+    <ion-item>
+      <ion-label>Course:</ion-label>
+      <ion-text color="primary"> Ionic 6 </ion-text>
+    </ion-item>
+
+
+    <ion-item>
+      <ion-label>Author:</ion-label>
+      <ion-text color="primary"> Fernando Herrera </ion-text>
+    </ion-item>
+
   </ion-list>
-  <!--   <ion-button routerLink="/alert">
-    ALERT
-  </ion-button>
-  <ion-button routerLink="/action-sheet">
-    ACTION SHEET
-  </ion-button> -->
 </ion-content>

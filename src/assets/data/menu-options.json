@@ -1,0 +1,117 @@
+[
+  {
+    "icon": "american-football-outline",
+    "name": "Action Sheet",
+    "redirecTo": "/action-sheet"
+  },
+  {
+    "icon": "alert-circle-outline",
+    "name": "Alert",
+    "redirecTo": "/alert"
+  },
+  {
+    "icon": "person-circle-outline",
+    "name": "Icon Avatar",
+    "redirecTo": "/avatar"
+  },
+  {
+    "icon": "radio-button-off-outline",
+    "name": "Button",
+    "redirecTo": "/buttons"
+  },
+  {
+    "icon": "card-outline",
+    "name": "Card",
+    "redirecTo": "/card"
+  },
+  {
+    "icon": "checkbox-outline",
+    "name": "Checkbox",
+    "redirecTo": "/checkbox"
+  },
+  {
+    "icon": "calendar-outline",
+    "name": "Datetime",
+    "redirecTo": "/datetime"
+  },
+  {
+    "icon": "ellipsis-horizontal-outline",
+    "name": "Fab",
+    "redirecTo": "/fab"
+  },
+  {
+    "icon": "grid-outline",
+    "name": "Grid",
+    "redirecTo": "/grid"
+  },
+  {
+    "icon": "barbell-outline",
+    "name": "Infinite Scroll",
+    "redirecTo": "/infinite"
+  },
+  {
+    "icon": "document-text-outline",
+    "name": "Input",
+    "redirecTo": "/input"
+  },
+  {
+    "icon": "list-outline",
+    "name": "List",
+    "redirecTo": "/list"
+  },
+  {
+    "icon": "list-circle-outline",
+    "name": "List Reorder",
+    "redirecTo": "/list-reorder"
+  },
+  {
+    "icon": "reload-outline",
+    "name": "Loading",
+    "redirecTo": "/loading"
+  },
+  {
+    "icon": "phone-portrait-outline",
+    "name": "Modal",
+    "redirecTo": "/modal"
+  },
+  {
+    "icon": "tablet-portrait-outline",
+    "name": "Popover",
+    "redirecTo": "/popover"
+  },
+  {
+    "icon": "download-outline",
+    "name": "Progress",
+    "redirecTo": "/progress"
+  },
+  {
+    "icon": "arrow-down-circle-outline",
+    "name": "Refresher",
+    "redirecTo": "/refresh"
+  },
+  {
+    "icon": "search-outline",
+    "name": "Search",
+    "redirecTo": "/search"
+  },
+  {
+    "icon": "copy-outline",
+    "name": "Segment",
+    "redirecTo": "/segment"
+  },
+  {
+    "icon": "albums-outline",
+    "name": "Slides",
+    "redirecTo": "/slide"
+  },
+  {
+    "icon": "tablet-landscape-outline",
+    "name": "Tabs",
+    "redirecTo": "/tabs"
+  },
+  {
+    "icon": "pricetag-outline",
+    "name": "Toasts",
+    "redirecTo": "/toasts"
+  }
+]

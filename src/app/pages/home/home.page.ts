@@ -1,31 +1,26 @@
+import { Observable } from 'rxjs';
+import { DataService } from './../../services/data.service';
 import { Component, OnInit } from '@angular/core';
-
-interface IComponent {
-  icon: string;
-  name: string;
-  redirecTo: string;
-}
-
+import { MenuController } from '@ionic/angular';
+import { MenuItem } from 'src/app/interfaces/menu.interface';
 @Component({
   selector: 'app-home',
   templateUrl: './home.page.html',
   styleUrls: ['./home.page.scss'],
 })
 export class HomePage implements OnInit {
-  components: IComponent[] = [
-    {
-      icon: 'american-football-outline',
-      name: 'Action Sheet',
-      redirecTo: '/action-sheet',
-    },
-    {
-      icon: 'logo-apple-appstore',
-      name: 'Alert',
-      redirecTo: '/alert',
-    },
-  ];
+  menuOptions: Observable<MenuItem[]>;
 
-  constructor() {}
+  constructor(
+    private menuController: MenuController,
+    private dataService: DataService
+  ) {}
 
-  ngOnInit() {}
+  ngOnInit() {
+    this.menuOptions = this.dataService.getMenuOptions();
+  }
+
+  showMenu() {
+    this.menuController.open('first');
+  }
 }

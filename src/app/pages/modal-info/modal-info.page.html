@@ -1,0 +1,28 @@
+<ion-header>
+  <ion-toolbar>
+    <ion-title>modal-info</ion-title>
+  </ion-toolbar>
+</ion-header>
+
+<ion-content class="ion-padding">
+
+  <ion-button (click)="withoutArgs()" expand="block" fill="clear" shape="round">
+    Without Args
+  </ion-button>
+
+
+  <ion-button (click)="withArgs()" expand="block" fill="clear" shape="round">
+    With Args
+  </ion-button>
+
+  <hr>
+
+  <ion-text color="primary">
+    <h4>{{ name }}</h4>
+  </ion-text>
+
+  <ion-text color="primary">
+    <h5>{{ country }}</h5>
+  </ion-text>
+
+</ion-content>

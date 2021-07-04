@@ -1,11 +1,12 @@
+import { PopoverInfoComponent } from './popover-info/popover-info.component';
 import { IonicModule } from '@ionic/angular';
 import { HeaderComponent } from './header/header.component';
 import { NgModule } from '@angular/core';
 import { CommonModule } from '@angular/common';
 
 @NgModule({
-  declarations: [HeaderComponent],
+  declarations: [HeaderComponent, PopoverInfoComponent],
   imports: [CommonModule, IonicModule],
-  exports: [HeaderComponent],
+  exports: [HeaderComponent, PopoverInfoComponent],
 })
 export class ComponentsModule {}

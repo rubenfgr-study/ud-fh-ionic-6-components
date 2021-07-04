@@ -1,0 +1,34 @@
+<app-header title="Datetime"></app-header>
+
+<ion-content>
+  <ion-list>
+    <ion-list-header>
+      <ion-label>Birthdate Data</ion-label>
+    </ion-list-header>
+
+    <ion-item>
+      <ion-label>Birthdate</ion-label>
+      <ion-datetime display-format="DD/MM/YYYY" [value]="birthdate.toISOString()" (ionChange)="changedDate($event)"></ion-datetime>
+    </ion-item>
+
+    <ion-list-header>
+      <ion-label>Restriction</ion-label>
+    </ion-list-header>
+
+    <ion-item>
+      <ion-label>Min & Max</ion-label>
+      <ion-datetime display-format="DD/MM/YYYY" min="2015-01-01" max="2015-12-31"></ion-datetime>
+    </ion-item>
+
+    <ion-item>
+      <ion-label>Years</ion-label>
+      <ion-datetime display-format="YYYY" min="2015" max="2025"></ion-datetime>
+    </ion-item>
+
+    <ion-item>
+      <ion-label>Custom Options</ion-label>
+      <ion-datetime [pickerOptions]="customPickerOptions" [yearValues]="customYearValues"></ion-datetime>
+    </ion-item>
+
+  </ion-list>
+</ion-content>
