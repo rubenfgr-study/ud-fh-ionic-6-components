@@ -9,6 +9,7 @@ import { MenuItem } from 'src/app/interfaces/menu.interface';
   styleUrls: ['./home.page.scss'],
 })
 export class HomePage implements OnInit {
+  title = 'Components 3.0.0';
   menuOptions: Observable<MenuItem[]>;
 
   constructor(
